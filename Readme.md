@@ -6,7 +6,7 @@ sBacklight is a client + server application which manages the backlight levels o
 * copy backlight-server.py somewhere safe, owned by root
 * set up service for backlight-server
 Example:
-`
+```
 [Unit]
 Description=Backlight server which handles backlight
 After=network.target
@@ -21,7 +21,7 @@ ExecStart=python /root/backlight-server.py
 
 [Install]
 WantedBy=multi-user.target
-`
+```
 
 * enable service `systemctl enable --now backlight-server.service`
 * alias sbacklight `alias sbacklight="python3 {your-directory}/backlight.py"`
